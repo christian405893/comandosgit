@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comandos do github</title>
+</head>
+<body>
+    <h1>Comandos em github</h1>
+    <p>para abrir o terminal no vscode use o atalho: ctrl + '</p>
+    <h3>comando para mandar o código do vscode para o github com repositorio já criado no github</h3>
+    <code>git init</code>
+    <h3>vincular o código o repositório</h3>
+    <code>git remote add origin link_do_respositorio</code>
+    <h3>adicionar todos os arquivos da pasta para o git</h3>
+    <code>git add *</code>
+    <h3>confirmar as alterações</h3>
+    <code>git commit -m "digite seu comentario"</code>
+    <h3>criar uma branch</h3>
+    <code>git branch -M main</code>
+    <h3>enviar os arquivos do projeto para o repositório</h3>
+    <code>git push -u origin main</code>
+    <p>ou se for na pasta master bote:</p>
+    <code>git push -u origin master</code>
+    <h2>para enviar códigos para o github sem criar um local no github</h2>
+    <code>
+        cd nome_do_projeto <br>
+        git add <br>
+        git commit -m "comentario sobre o que mudou no projeto" <br>
+        git push
+    </code>
+    <h2>fazer uma branch/adicionar um nome á branch</h2>
+    <code>
+        git checkout -b nome_da_alteração
+    </code>
+
+    <h2>depois de fazer alguma alteração no código quero atualizar minha branch no github com o código que fiz no vscode</h2>
+
+    <p>entrando na  branch: <code>git checkout nome_da_branch</code></p>
+    
+    <p>aidcionando a aleração do código no vscode para a branch que está no git: <code>git add . </code></p>
+
+    <p>comentario da mudança que foi feita no código: <code>git commit -m "nome_da_alteração"</code></p>
+    <p>enviando alterações feita no vscode para a branch do git: <code>git push origin nome_da_branch</code> <br> no <q>nome_da_branch</q> digite a branch que você quer altualizar com o código novo</p>
+    <h3>quero entrar em alguma branch</h3>
+    <code>git checkout nome_da_branch</code>
+    <h3>quer voltar para a branch principal/main?</h3>
+    <code>git checkout main</code>
+    <h3>quer voltar para a branch que foi criada?</h3>
+    <p><code>git chekout nome_da_branch</code> em <q>nome_da_branch</q> digite o nome da branch que você deseja entrar</p>
+
+    <h2>o que é um <q>merger</q>?</h2>
+
+    <p>merger é juntar uma branch com a branch main/principal</p>
+
+    <h3>como faço um merge?</h3>
+    <p>primeiro, entre na branch principal: 
+        <code>git checkout main</code> <br>
+        depois bote o nome da branch que você quer juntar/fazer o merge: 
+        <code>git merge comentario</code> o <q>comentario</q>
+        necessariamente precisa ser o nome da branch que você quer juntar. <br>
+        depois envie toda essa alteração para o github:
+        <code>git push origin main</code>
+    </p>
+    <h2>clonando códigos que estão no github</h2>
+    <p>vá até o código que deseja clonar e selecione <q>code</q>
+        depois copie o link do código que deseja clonar e crie uma pasta no seu pc e entre nela pelo vscode, depois digite: <code>git clone cole_o_link_aqui</code> <br>
+        Em <q>cole_o_link_aqui</q> necessariamente precisa ser o link do repositorio que você deseja clonar
+    </p>
+    <h2>
+        quer pegar uma atualização do código que você clonou?
+    </h2>
+    <p>entre na pasta do repositório clonado usando o comando:
+        <code>cd nome_da_pasta</code> <br>
+        em seguida use o comando para puxar os arquivos do repositorio do git: <code>git pull</code>
+    </p>
+
+
+
+
+</body>
+</html>
